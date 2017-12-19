@@ -45,6 +45,13 @@ function draw() {
     bVal = bVal + 3;
   }
 }
+
+function keyPressed() {
+    if (keyCode === 115 || keyCode === 83){
+        saveCanvas('geometricPattern', 'png');
+    } 
+    return false;
+}
   
     //ellipse(0, height/2, circleDiameter, circleDiameter);
     //ellipse(circleDiameter, height/2, circleDiameter, circleDiameter);
