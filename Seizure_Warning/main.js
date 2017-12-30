@@ -8,14 +8,20 @@ var bVal;
 
 function setup() {
     createCanvas(480, 600);
+    
+    frameRate(5);
+    
+    
     circleDiameter = width/NUM_CIRCLES;
     circleRadius = circleDiameter/2;
+    
+    rVal = random(0,255);
+    gVal = random(0,255);
+    bVal = random(0,255);
+    
 }
 
 function draw() {
-    rVal = 255;
-    gVal = 0;
-    bVal = 0;
     
     var isShifted = false;
     
@@ -43,8 +49,23 @@ function draw() {
     rVal = rVal - 2;
     gVal = gVal + 7;
     bVal = bVal + 3;
+    
+  }
+  
+  if (gVal=255) {
+    rVal = random(0,255);
+    gVal = random(0,255);
+    bVal = random(0,255);
   }
 }
+
+mousePressed = function() {
+    noLoop();
+};
+
+mouseReleased = function() {
+    loop();
+};
 
 function keyPressed() {
     if (keyCode === 115 || keyCode === 83){
