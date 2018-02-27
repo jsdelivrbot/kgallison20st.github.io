@@ -15,9 +15,9 @@ function setup() {
     circleDiameter = width/NUM_CIRCLES;
     circleRadius = circleDiameter/2;
     
-    rVal = random(0,255);
-    gVal = random(0,255);
-    bVal = random(0,255);
+    rVal = random(-1,1);
+    gVal = random(-1,1);
+    bVal = random(1,1);
     
 }
 
@@ -74,12 +74,3 @@ function keyPressed() {
     return false;
 }
   
-    //ellipse(0, height/2, circleDiameter, circleDiameter);
-    //ellipse(circleDiameter, height/2, circleDiameter, circleDiameter);
-    //ellipse(2*circleDiameter, height/2, circleDiameter, circleDiameter);
-    //ellipse(3*circleDiameter, height/2, circleDiameter, circleDiameter);
-    //ellipse(4*circleDiameter, height/2, circleDiameter, circleDiameter);
-    //ellipse(5*circleDiameter, height/2, circleDiameter, circleDiameter);
-    //ellipse(6*circleDiameter, height/2, circleDiameter, circleDiameter);
-    //ellipse(7*circleDiameter, height/2, circleDiameter, circleDiameter);
-    //ellipse(8*circleDiameter, height/2, circleDiameter, circleDiameter);
